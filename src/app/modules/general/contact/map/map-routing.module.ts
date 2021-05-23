@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MailingComponent } from '../mailing/mailing.component';
+import { MapComponent } from '../map/map.component';
 
 const routes: Routes = [
-  { path: '', component: MailingComponent, children:[] },
+  { path: '', component: MapComponent, children:[] },
 ];
 
 @NgModule({
