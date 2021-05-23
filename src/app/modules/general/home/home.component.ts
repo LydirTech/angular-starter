@@ -13,8 +13,44 @@ export class HomeComponent implements OnInit {
   bootstrap: string = environment.application.bootstrap;
   fontawesome: string = environment.application.fontawesome;
 
+  features: any;
+  
+  constructor() {
+    this.features =
+      [
+        {
+          name: 'Bootstrap prototype',
+          description: 'Bootstrap Prototype Description',
+          icon: 'fab fa-bootstrap',
+          link: 'bootstrap-prototype'
+        },
+        {
+          name: 'Reactive Form',
+          description: 'Reactive Form Description',
+          icon: 'fab fa-bootstrap',
+          link: 'reactive-form'
+        },
+        {
+          name: 'Services',
+          description: 'Services Description',
+          icon: 'fab fa-bootstrap',
+          link: 'services'
+        },
+        {
+          name: 'Components',
+          description: 'Components Description',
+          icon: 'fab fa-bootstrap',
+          link: 'components'
+        },
+        {
+          name: 'Template Driven Forms',
+          description: 'Template Driven Forms Description',
+          icon: 'fab fa-bootstrap',
+          link: 'template-driven-forms'
+        },
+      ];
+    }
 
-  constructor() { }
 
   ngOnInit(): void {
     this.loadScript('assets/params/js/index.js');
